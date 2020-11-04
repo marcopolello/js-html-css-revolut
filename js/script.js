@@ -4,6 +4,7 @@ $(document).ready(function(){
     $(this).click(function() {
       console.log("hai cliccato correttamente");
       console.log(indice, elemento); //elemento = $(this)
+      $('nav.dropdown').removeClass('dispblock');
       if (indice === 0) {
         $('#dd1').toggleClass('dispblock');
       } else if (indice === 1) {
@@ -21,18 +22,5 @@ $(document).ready(function(){
     });
 
   });
-
-
-/*
-  $('li.dropitem').click(function() {
-    // console.log($(this));
-    $(this).
-  });
-
-  function changeDisplay() {
-    $('.dropdown').toggleClass('dispblock');
-  }
-*/
-
 
 });
