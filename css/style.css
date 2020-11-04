@@ -26,9 +26,24 @@ nav{
 .navdx > ul {
   display: flex;
   justify-content: flex-end;
-  padding: 10px;
+  padding: 15px;
 }
 .navdx > ul li{
   list-style: none;
-  margin: 10px;
+  margin: 10px 15px;
+}
+.dropitem{
+  position: relative;
+}
+.dropdown{
+  position: absolute;
+  display: none;
+}
+
+/* classi utili per display block e none */
+.dispnone{
+  display: none;
+}
+.dispblock{
+  display: block;
 }
