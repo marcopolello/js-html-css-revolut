@@ -8,6 +8,7 @@ nav{
   display: flex;
   justify-content: space-between;
   flex-wrap: nowrap;
+  margin: 20px 50px;
 }
 .navsx{
   /* debug */
@@ -38,6 +39,7 @@ nav{
 .dropdown{
   position: absolute;
   display: none;
+  top: -5px;
 }
 
 /* classi utili per display block e none */

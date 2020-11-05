@@ -41,10 +41,11 @@ $(document).ready(function () {
  });
 
  // cambio proprietà css dei menu dropdown tramite selezione id
- $('#dd2').css("left", "-20px");
- $('#dd3').css("left", "-15px");
- $('#dd4').css("left", "-13px");
- $('#dd5').css("left", "-18px");
- $('#dd6').css("left", "-13px");
+ $('#dd1').css("left", "-50px");
+ $('#dd2').css("left", "-70px");
+ $('#dd3').css("left", "-65px");
+ $('#dd4').css("left", "-60px");
+ $('#dd5').css("left", "-70px");
+ $('#dd6').css("left", "-65px");
 
-}); 
+});
