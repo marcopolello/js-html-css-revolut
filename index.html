@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <title>nav con dropdown</title>
   </head>
@@ -13,6 +15,16 @@
       <nav>
 
         <div class="navsx">
+
+          <div id="logo">
+            <a href="#"> <img src="img/logo.png" alt=""> </a>
+          </div>
+          <div class="link">
+            <a style="font-weight: bold; color: black;" href="#">PERSONALE</a>
+          </div>
+          <div class="link">
+            <a href="#">BUSINESS</a>
+          </div>
 
         </div>
 
@@ -135,9 +147,33 @@
               </nav>
             </li>
 
-            <input type="button" name="" value="bottone">
-
           </ul>
+
+          <a id="logo-hamb" href="#">
+            <i class="fas fa-bars"></i>
+          </a>
+          <div class="hamburger-menu">
+              <ul>
+                  <li>
+                      <a href="#">Home</a>
+                  </li>
+                  <li>
+                      <a href="#">Scopri il Corso</a>
+                  </li>
+                  <li>
+                      <a href="#">La nostra storia</a>
+                  </li>
+                  <li>
+                      <a href="#" class="cta">Iscriviti</a>
+                  </li>
+              </ul>
+              <a href="#" class="close">
+                  <i class="fas fa-times"></i>
+              </a>
+          </div>
+
+
+          <div id="btn"><span style="font-size: 20px;" >Scarica l'App</span><div id="circle"></div></div>
 
         </div>
 

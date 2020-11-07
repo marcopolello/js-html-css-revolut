@@ -2,25 +2,44 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  color: grey;
 }
-
+* a{
+  text-decoration: none;
+}
 nav{
   display: flex;
   justify-content: space-between;
   flex-wrap: nowrap;
   margin: 20px 50px;
 }
+/* parte sx NAV */
 .navsx{
+  display: flex;
+  justify-content: space-between;
   /* debug */
-  background-color: red;
-  min-height: 200px;
   width: 30%;
   /* debug */
 }
+#logo img{
+  width: 100px;
+  height: auto;
+  padding: 5px 0;
+}
+.navsx .link{
+  padding: 15px;
+  margin: 10px 15px;
+}
+
+
+
+
+
+/* parte dx NAV */
 .navdx{
+  display: flex;
   /* debug */
-  background-color: green;
-  min-height: 200px;
   width: 60%;
   /* debug */
 }
@@ -42,10 +61,101 @@ nav{
   top: -5px;
 }
 
+/* hamburger menu */
+#logo-hamb{
+  display: none;
+  padding: 10px;
+  margin: 17px 30px;;
+}
+#logo-hamb i{
+  width: 30px;
+}
+.close{
+  display: none;
+}
+.hamburger-menu{
+  display: none;
+}
+
+
+
+
 /* classi utili per display block e none */
 .dispnone{
   display: none;
 }
 .dispblock{
   display: block;
+}
+
+
+
+/* bottone */
+#btn {
+  padding: 10px;
+  margin-top: 17px;
+  background: #B4455E;
+  height: 30px;
+  min-width: 120px;
+  border: none;
+  border-radius: 10px;
+  position: relative;
+  transition: 1s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+#btn span{
+  color: white;
+}
+
+#btn #circle {
+  width: 5px;
+  height: 5px;
+  background: transparent;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  overflow: hidden;
+  transition: 500ms;
+}
+
+#btn:hover {
+  background: #D9D2EE;
+}
+#btn:hover span{
+  color: black;
+}
+
+#btn:hover #circle {
+  height: 30px;
+  width: 135px;
+  left: 0;
+  border-radius: 10px;
+  padding: 10px;
+  border: 2px solid #B4455E;
+}
+
+
+/* device sotto ai 1220px */
+@media all and (max-width: 1220px) {
+  .navdx{
+    justify-content: flex-end;
+    fle
+  }
+  .navdx ul{
+    display: none;
+  }
+  #logo-hamb{
+    display: block;
+  }
+  /* bottone */
+  .navdx #btn{
+    min-width: 200px;
+  }
+  #btn:hover #circle{
+    width: 200px;
+  }
 }
