@@ -66,17 +66,48 @@ nav{
   display: none;
   padding: 10px;
   margin: 17px 30px;;
+  /* z-index: 2; */
 }
 #logo-hamb i{
   width: 30px;
 }
-.close{
+.hamburger-menu {
+  position: absolute;
+  top: 0px;
+  left: 0px;
   display: none;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  min-width: 100vw;
+  min-height: 100vh;
+  background: #2B3F58;
 }
-.hamburger-menu{
-  display: none;
+.hamburger-menu ul {
+  font-size: 20px;
+  display: flex;
+  height: 70%;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  list-style: none;
+}
+/* menu a comparsa nella sezione menu-hamburger */
+.spec{
+  position: absolute;
+  left: 70px;
+  bottom: 4px;
+  flex-flow: row;
+  justify-content: space-between;
+}
+.spec > li{
+  margin: 10px;
 }
 
+#logo-close{
+  font-size: 30px;
+  margin-top: 10px;
+}
 
 
 
@@ -143,19 +174,27 @@ nav{
 @media all and (max-width: 1220px) {
   .navdx{
     justify-content: flex-end;
-    fle
   }
-  .navdx ul{
+  .navdx .large{
     display: none;
   }
+
   #logo-hamb{
     display: block;
   }
+
   /* bottone */
   .navdx #btn{
     min-width: 200px;
   }
   #btn:hover #circle{
     width: 200px;
+  }
+}
+
+/* sopra ai 1220px scompare il menu-hamburger anche se aperto */
+@media all and (min-width: 1220px) {
+  .hamburger-menu.dispblock{
+    display: none;
   }
 }

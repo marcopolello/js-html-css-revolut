@@ -15,6 +15,19 @@ $(document).ready(function () {
  $('#dd3').css("left", "-65px");
  $('#dd4').css("left", "-60px");
  $('#dd5').css("left", "-70px");
- $('#dd6').css("left", "-65px");
+ $('#dd6').css("left", "-75px");
+
+
+ // SEZIONE MENU-HAMBURGER
+ var openHamburger = $("#logo-hamb");
+ var closeHamburger = $("#logo-close");
+ //funzione che apre menu Hamburger
+ openHamburger.click(function() {
+  $(".hamburger-menu").addClass("dispblock");
+ });
+ // funzione che chiude menu e torna ad icona Hamburger
+ closeHamburger.click(function() {
+  $(".hamburger-menu").removeClass("dispblock");
+ });
 
 });
